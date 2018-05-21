@@ -10,4 +10,4 @@ const Index = () => (
 	</div>
 );
 
-export default withLayout(Index);
+export default withLayout()(Index);
