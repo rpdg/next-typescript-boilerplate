@@ -1,7 +1,13 @@
-import * as React from 'react'
+// tslint:disable import-name variable-name
+import * as React from 'react';
 
-export default () => (
+import { withLayout } from '~/hoc';
+import Title from '~/components/Title';
+
+const Index = () => (
 	<div>
-		<h1>Hello World</h1>
+		<Title>Hello World</Title>
 	</div>
 );
+
+export default withLayout(Index);
