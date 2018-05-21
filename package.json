@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node --project tsconfig.server.json server/index.ts ",
     "build": "NODE_ENV=production next build && tsc --project tsconfig.server.json",
-    "start": "next start"
+    "start": "next start",
+    "start:prod": "NODE_ENV=production node dist"
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
